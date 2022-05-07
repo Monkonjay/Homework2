@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0%;
+    flex-wrap: wrap;
+}
+
+h1 {
+    color: white;
+    margin-left: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    padding: 15px 6% 15px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: hsla(120, 29%, 29%, 0.616);
+    box-shadow: 0 5px 35px rgba(146, 204, 206, 0.4);
+}
+
+  nav {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;   
+  }
+
+  
+     nav a {
+      text-decoration: none;  
+      padding: 5px 10px;
+      color: whitesmoke;
+      margin-right: 10px;
+      background-size: 100% 0.4em;
+      font-size: 1.5em;
+  }
+
+  .banner {
+      margin-left: 10px;
+  }
+
+  .divider {
+      font-weight: bolder;
+      height: 26px;
+    }
+
+aside {
+    width: 25%;
+    padding-left: 15px;
+    margin: 0;
+    margin-top: 0px;
+    float: left;
+    font-style: italic;
+    background-color: hsla(120, 15%, 44%, 0.616);
+  }
+
+aside p {
+    textwr: wrap;
+}
+
+#profile{
+   
+    
+}
+
+  img {
+      float: left;
+      width: 200px;
+      height: 280px;
+      margin: 0;
+      padding: 0px 10px 10px 0px;
+    
+
+  }
+
+  #portfolio{
+      display: flex;
+      flex-wrap: wrap;
+      background-color: antiquewhite;
+      width: 75%;
+      padding: 50px;
+      justify-content: space-between;
+
+  }
+
+  .project {
+       
+      
+      /* ; */
+      width: 50%;
+      margin: 50px;
+      flex: 1 0 200px;
+      padding: 25px;
+      border: 8px solid gray;
+      background-color: brown;
+      box-shadow: 5px salmon
+      
+     
+    }
+
+  p {
+      text-align: justify;
+      margin-right: 15px;;
+  }
+
+  #portfolio div {
+      text-align: center;
+  }
+ 
