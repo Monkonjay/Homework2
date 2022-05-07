@@ -19,9 +19,9 @@ header {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: center; 
     background-color: hsla(120, 29%, 29%, 0.616);
-    box-shadow: 0 5px 35px rgba(146, 204, 206, 0.4);
+    
 }
 
   nav {
@@ -59,14 +59,7 @@ aside {
     background-color: hsla(120, 15%, 44%, 0.616);
   }
 
-aside p {
-    textwr: wrap;
-}
 
-#profile{
-   
-    
-}
 
   img {
       float: left;
@@ -83,8 +76,10 @@ aside p {
       flex-wrap: wrap;
       background-color: antiquewhite;
       width: 75%;
-      padding: 50px;
-      justify-content: space-between;
+      padding: 40px;
+      justify-content: flex-end;
+      box-shadow: 0 5px 35px rgba(146, 204, 206, 0.4);
+      min-height: 80vh;
 
   }
 
