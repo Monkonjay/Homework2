@@ -72,7 +72,8 @@ img {
   #portfolio{
       display: flex;
       flex-wrap: wrap;
-      background-color: antiquewhite;
+      background-color: whitesmoke;
+      /* background-color: antiquewhite; */
       width: 75%;
       padding: 40px;
       justify-content: flex-end;
@@ -82,14 +83,12 @@ img {
   }
 
   .project {
-       
       
-      /* ; */
       width: 50%;
       margin: 50px;
       flex: 1 0 200px;
       padding: 25px;
-      border: 8px solid gray;
+      border: 8px solid hsla(120, 15%, 44%, 0.616);
       background-color: brown;
       box-shadow: 5px salmon
       
@@ -145,7 +144,46 @@ img {
       justify-content: space-around;
       min-height: 15vh;
       align-items: center;
-      background-color: darkseagreen;
+      background-color: hsla(120, 29%, 29%, 0.616);
       margin: 0;
       width: 100%;
   }
+
+  .project #pro_title {
+      align-items: flex-start;
+      flex-direction: column;
+      width: 100%;
+  }
+
+  /* hr.rounded { */
+    /* border-top: 8px solid yellow; */
+    /* border-radius: 5px; */
+  /* } */
+
+  hr {
+    display: flex;
+    margin: 0;
+    width: 100%;
+    background-color: black;
+
+  }
+
+  footer {
+      background-color: hsla(120, 29%, 29%, 0.616);
+      margin: 0;
+      padding: 0;
+      min-height: 5vh;
+  }
+
+  span {
+    color: whitesmoke;
+    font-size: 22px;
+   
+
+  }
+
+  .contact div {
+      
+      
+  }
+  
