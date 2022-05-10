@@ -2,6 +2,13 @@
     box-sizing: border-box;
 }
 
+/* Variables */
+:root {
+    --primary_color: hsla(120, 29%, 29%, 0.616);
+    --secondary_color: whitesmoke;
+    --sidebar_color:  hsla(120, 15%, 44%, 0.616);
+}
+
 body {
     margin: 0%;
     flex-wrap: wrap;
@@ -20,8 +27,8 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center; 
-    background-color: hsla(120, 29%, 29%, 0.616);
-   
+    /* background-color: hsla(120, 29%, 29%, 0.616); */
+    background-color:  var(--primary_color);
     
 }
 
@@ -35,7 +42,7 @@ header {
      nav a {
       text-decoration: none;  
       padding: 5px 10px;
-      color: whitesmoke;
+      color: var(--secondary_color);
       margin-right: 10px;
       background-size: 100% 0.4em;
       font-size: 1.5em;
@@ -54,7 +61,7 @@ aside {
     margin-top: 0px;
     float: left;
     font-style: italic;
-    background-color: hsla(120, 15%, 44%, 0.616);
+    background-color: var(--sidebar_color);
   }
 
 
@@ -72,14 +79,17 @@ img {
   #portfolio{
       display: flex;
       flex-wrap: wrap;
-      background-color: whitesmoke;
-      /* background-color: antiquewhite; */
+      background-color: var(--secondary_color);
       width: 75%;
       padding: 40px;
       justify-content: flex-end;
-      box-shadow: 0 5px 35px rgba(146, 204, 206, 0.4);
+      /* box-shadow: 0 5px 35px rgba(146, 204, 206, 0.4); */
       min-height: 98vh;
 
+  }
+
+  section p {
+      text-align: center;
   }
 
   .project {
@@ -88,8 +98,8 @@ img {
       margin: 50px;
       flex: 1 0 200px;
       padding: 25px;
-      border: 8px solid hsla(120, 15%, 44%, 0.616);
-      background-color: brown;
+      border: 8px solid var(--sidebar_color);
+      /* background-color: brown; */
       box-shadow: 5px salmon
       
      
@@ -138,13 +148,13 @@ img {
       background-image: url("./images/coding_bg.jpg");
   }
 
-  .contact {
+  footer {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
       min-height: 15vh;
       align-items: center;
-      background-color: hsla(120, 29%, 29%, 0.616);
+      background-color: var(--primary_color);
       margin: 0;
       width: 100%;
   }
@@ -155,35 +165,11 @@ img {
       width: 100%;
   }
 
-  /* hr.rounded { */
-    /* border-top: 8px solid yellow; */
-    /* border-radius: 5px; */
-  /* } */
-
-  hr {
-    display: flex;
-    margin: 0;
-    width: 100%;
-    background-color: black;
-
-  }
-
-  footer {
-      background-color: hsla(120, 29%, 29%, 0.616);
-      margin: 0;
-      padding: 0;
-      min-height: 5vh;
-  }
 
   span {
-    color: whitesmoke;
+    color: var(--secondary_color);
     font-size: 22px;
-   
 
   }
 
-  .contact div {
-      
-      
-  }
   
