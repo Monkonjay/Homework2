@@ -12,12 +12,20 @@
 body {
     margin: 0%;
     flex-wrap: wrap;
+    padding: 0;
+    /* color: var(--secondary_color); */
+    line-height: 2.5;
 }
 
-h1 {
-    color: white;
-    margin-left: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+div h3 {
+    width: 25%;
+    background-color: var(--sidebar_color);
+    margin: 0;
+    padding: 10px 10px 10px 75px;
+    font-size: 150%;
+    color: gold;
+    font-weight: bold;
+    
 }
 
 header {
@@ -27,31 +35,49 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center; 
-    /* background-color: hsla(120, 29%, 29%, 0.616); */
+    /* box-shadow: 0 10px 45px goldenrod; */
     background-color:  var(--primary_color);
+}
+
+header h1 {
+    color: white;
+    margin-left: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1
+}
+
+
+    
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;   
+}
+
+  
+nav a {
+    text-decoration: none;  
+    padding: 5px 10px;
+    color: var(--secondary_color);
+    margin-right: 10px;
+    background-size: 100% 0.4em;
+    font-size: 1.5em;
+    transition: all 0.25s ease-in;
+    background-position: bottom;
+    font-size: 1.5rem;
     
 }
 
-  nav {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;   
-  }
+nav a:hover {
+    background-size: 100% 100%;
+    color: gold;
+}
 
-  
-     nav a {
-      text-decoration: none;  
-      padding: 5px 10px;
-      color: var(--secondary_color);
-      margin-right: 10px;
-      background-size: 100% 0.4em;
-      font-size: 1.5em;
-  }
-
-  .banner {
-      margin-left: 10px;
+.banner {
+    margin-left: 10px;
  
-  }
+}
 
 
 aside {
@@ -107,7 +133,8 @@ img {
 
   p {
       text-align: justify;
-      margin-right: 15px;;
+      margin-right: 15px;
+     
   }
 
   #portfolio div {
@@ -152,7 +179,7 @@ img {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
-      min-height: 15vh;
+      min-height: 20vh;
       align-items: center;
       background-color: var(--primary_color);
       margin: 0;
