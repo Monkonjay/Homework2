@@ -74,10 +74,6 @@ nav a:hover {
     color: gold;
 }
 
-.banner {
-    margin-left: 10px;
- 
-}
 
 
 aside {
@@ -100,49 +96,44 @@ img {
       padding: 0px 10px 10px 0px;
     
 
-  }
+}
 
-  #portfolio{
-      display: flex;
-      flex-wrap: wrap;
-      background-color: var(--secondary_color);
-      width: 75%;
-      padding: 40px;
-      justify-content: flex-end;
-      /* box-shadow: 0 5px 35px rgba(146, 204, 206, 0.4); */
-      min-height: 98vh;
+#portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--secondary_color);
+    width: 75%;
+    padding: 40px;
+    justify-content: flex-end;
+    /* box-shadow: 0 5px 35px rgba(146, 204, 206, 0.4); */
+    min-height: 98vh;
+}
 
-  }
+section p {
+    text-align: center;
+}
 
-  section p {
-      text-align: center;
-  }
+.project { 
+    width: 50%;
+    margin: 50px;
+    flex: 1 0 200px;
+    padding: 25px;
+    border: 8px solid var(--sidebar_color);
+    /* background-color: brown; */
+    box-shadow: 5px salmon 
+}
 
-  .project {
-      
-      width: 50%;
-      margin: 50px;
-      flex: 1 0 200px;
-      padding: 25px;
-      border: 8px solid var(--sidebar_color);
-      /* background-color: brown; */
-      box-shadow: 5px salmon
-      
-     
-    }
+p {
+    text-align: justify;
+    margin-right: 15px;
+}
 
-  p {
-      text-align: justify;
-      margin-right: 15px;
-     
-  }
-
-  #portfolio div {
-      text-align: center;
-  }
+#portfolio div {
+    text-align: center;
+}
   
 
-  .banner {
+.banner {
     /* background: rgb(68, 88, 120); */
     background-image: url("./images/coding_bg.jpg");
     background-size: cover;
@@ -153,50 +144,41 @@ img {
     justify-content: flex-end;
     align-items: flex-end;
     text-align: right;
-    margin: 0;
-  }
+}
  
-  .banner p {
+.banner p {
     flex: 0 0 90%;
-  }
+}
 
-  .banner div {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-      align-items: center;
-
-  }
-
-  .bannerImg {
-      display: flex;
-      margin: 0px;
-      padding: 0
-      background-image: url("./images/coding_bg.jpg");
-  }
-
-  footer {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      min-height: 20vh;
-      align-items: center;
-      background-color: var(--primary_color);
-      margin: 0;
-      width: 100%;
-  }
-
-  .project #pro_title {
-      align-items: flex-start;
-      flex-direction: column;
-      width: 100%;
-  }
+.banner div {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* justify-content: flex-start; */
+    /* align-items: center; */
+}
 
 
-  span {
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-height: 20vh;
+    align-items: center;
+    background-color: var(--primary_color);
+    margin: 0;
+    width: 100%;
+}
+
+.project #pro_title {
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+span {
     color: var(--secondary_color);
     font-size: 22px;
-
-  }
+}
 
   
