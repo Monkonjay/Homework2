@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+
 /* Variables */
 :root {
     --primary_color: hsla(120, 29%, 29%, 0.616);
@@ -105,10 +106,21 @@ img {
     flex-wrap: wrap;
     background-color: var(--secondary_color);
     width: 75%;
-    padding: 40px;
-    justify-content: flex-end;
+    padding: 30px 0px 20px 30px;
+    justify-content: center;
     /* box-shadow: 0 5px 35px rgba(146, 204, 206, 0.4); */
     min-height: 98vh;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    min-height: 98vh;
+    
 }
 
 section p {
@@ -116,13 +128,41 @@ section p {
 }
 
 .project { 
-    width: 50%;
+    /* width: 100%;
     margin: 50px;
     flex: 1 0 200px;
     padding: 25px;
+    border: 5px solid var(--secondary_color);
+    /* background-color: brown;
+    /* box-shadow: 5px salmon 
+    end my original */
+    
     border: 8px solid var(--sidebar_color);
-    /* background-color: brown; */
-    /* box-shadow: 5px salmon  */
+    background-color: var(--primary_color);
+    color: var(--secondary_color);
+    min-height: 200px;
+    flex-basis: calc(50% - 1em);
+    /* flex-basis: fill; */
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 20px 0;
+    text-decoration: none;
+    background-blend-mode: soft-light;
+}
+
+.project:hover {
+   background-color: silver;
+}
+
+.project div {
+    background-color: burlywood;
+    padding: 8px 10px;
+  }
+  
+
+.project:first-child {
+    min-height: 300px;
+    flex-basis: 100%;
 }
 
 p {
@@ -130,10 +170,6 @@ p {
     margin: 10px 15px 10px 15px;
 }
 
-#portfolio div {
-    text-align: center;
-}
-  
 
 .banner {
     /* background: rgb(68, 88, 120); */
@@ -148,32 +184,28 @@ p {
     text-align: left;
 }
  
-.banner p {
-    flex: 0 0 90%;
-}
 
-
-footer {
+footer div {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    min-height: 20vh;
+    min-height: 10vh;
     align-items: center;
-    background-color: var(--primary_color);
+    background-color: var(--sidebar_color);
     margin: 0;
     width: 100%;
 }
 
-.project #pro_title {
-    align-items: flex-start;
-    flex-direction: column;
-    width: 100%;
+#contact address a {
+    color: var(--sidebar_color);
+    padding: 5px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-style: normal;
+    display: flex;
+    flex-direction: row;
+    
 }
 
-
-span {
-    color: var(--secondary_color);
-    font-size: 22px;
-}
 
   
