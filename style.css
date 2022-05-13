@@ -8,30 +8,21 @@
     --primary_color: hsla(120, 29%, 29%, 0.616);
     --secondary_color: whitesmoke;
     --sidebar_color:  hsla(120, 15%, 44%, 0.616);
+    --span_banner_hover: gold;
 }
 
 body {
     margin: 0%;
     padding: 0;
     line-height: 2.5;
-    background-color: var(--secondary_color);
+    background-color: var(--secondary_color); 
+  
 }
 
 h2 {
     text-align: center;
 }
 
-
-div h3 {
-    width: 25%;
-    background-color: var(--sidebar_color);
-    margin: 0;
-    padding: 10px 10px 10px 75px;
-    font-size: 150%;
-    color: gold;
-    font-weight: bold;
-    
-}
 
 header {
     padding: 15px 6% 15px 0;
@@ -40,7 +31,7 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center; 
-    /* box-shadow: 0 10px 45px goldenrod; */
+    box-shadow: 0 10px 45px var(--span_banner_hover); 
     background-color:  var(--primary_color);
 }
 
@@ -51,15 +42,11 @@ header h1 {
     line-height: 1
 }
 
-
-    
-
 nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;   
 }
-
   
 nav a {
     text-decoration: none;  
@@ -70,16 +57,13 @@ nav a {
     font-size: 1.5em;
     transition: all 0.25s ease-in;
     background-position: bottom;
-    font-size: 1.5rem;
-    
+    font-size: 1.5rem;   
 }
 
 nav a:hover {
     background-size: 100% 100%;
-    color: gold;
+    color: var(--span_banner_hover);
 }
-
-
 
 aside {
     width: 25%;
@@ -89,28 +73,25 @@ aside {
     float: left;
     font-style: normal;
     background-color: var(--sidebar_color);
-  }
-
-
+}
 
 img {
-      float: left;
-      width: 200px;
-      height: 280px;
-      margin: 0;
-      padding: 0;   
+    float: left;
+    width: 200px;
+    height: 280px;
+    margin: 0;
+    padding: 0;   
 }
 
 #portfolio{
     display: flex;
     flex-wrap: wrap;
-    background-color: var(--secondary_color);
+    background-color: var(--secondary_color); 
     width: 75%;
     padding: 40px;
     justify-content: center;
-    /* box-shadow: 0 5px 35px rgba(146, 204, 206, 0.4); */
     min-height: 98vh;
-   
+    transition: all 0.5s; 
 }
 
 
@@ -120,8 +101,7 @@ img {
     justify-content: space-between;
     align-items: center;
     padding: 0;
-    min-height: 98vh;
-    
+    min-height: 98vh;  
 }
 
 section p {
@@ -130,16 +110,39 @@ section p {
 
 .project { 
     border: 8px solid var(--sidebar_color);
-    /* background-color: var(--primary_color); */
-    /* color: var(--secondary_color); */
+    background-color: var(--primary_color); 
+    color: var(--secondary_color); 
     min-height: 200px;
+    max-height: 250px;
     flex-basis: calc(50% - 1em);
     display: flex;
     align-items: flex-end;
     padding: 0 0 20px 0;
+    margin: 0.5em;
     text-decoration: none;
-    /* background-blend-mode: soft-light; */
+    background-blend-mode: soft-light;
+    transition: all 0.5s;
+    font-size: 1rem;
 }
+
+.project div {
+    background-color: var(--sidebar_color);
+    padding: 8px 10px;
+    margin: 50px 300px 10 0;
+    max-height: 150px;
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0 15px 0 15;
+}
+
+.project_description span {
+    color: var(--span_banner_hover);
+    font-size: 20px;
+}
+
 
 .project:hover {
    background-color: silver;
@@ -147,7 +150,7 @@ section p {
 
 
 .project:first-child {
-    min-height: 250px;
+    min-height: 300px;
     flex-basis: 100%;
 }
 
@@ -158,7 +161,6 @@ p {
 
 
 .banner {
-    /* background: rgb(68, 88, 120); */
     background-image: url("./images/coding_bg.jpg");
     background-size: cover;
     background-position: center;
@@ -170,28 +172,44 @@ p {
     text-align: left;
 }
  
+#contact {
+    margin: 0px 40px 0px 40px;
+    background-color: var(--primary_color);
+    width: 75%;
+    min-height: 140px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 25px; 
+    margin-bottom: 0px;
+    align-items: flex-end;
+}
 
-#contact div address {
+#contact h2 {
+    text-align: left;
+}
+
+
+#contact_content a {
+    display: flex;
+    padding: 40px; 
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    
+}
+
+/* needs work */
+#contact_content {
     color: var(--sidebar_color);
     padding: 5px;
     text-decoration: none;
     font-size: 1.3rem;
     font-style: normal;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-around;
 }
 
-#contact {
-    background-color: var(--secondary_color);
-    margin: 0;
-    padding: 0;
-}
-
-
-
-
-
+/* load project images */
 .adventure_game {
     background-image: url("./images/adventure.jpg"); 
     background-size: cover;
@@ -217,3 +235,6 @@ p {
     background-image: url("./images/memorial.jpg"); 
     background-size: cover; 
 }
+/* end of porject images */
+
+/* start resposive design */
