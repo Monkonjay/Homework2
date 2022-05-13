@@ -203,5 +203,17 @@ p {
 }
 
 
+.group_project {
+    background-image: url("./images/group.jpg"); 
+    background-size: cover; 
+}
 
-  
+.store {
+    background-image: url("./images/store.jpg"); 
+    background-size: cover; 
+}
+
+.memorial {
+    background-image: url("./images/memorial.jpg"); 
+    background-size: cover; 
+}
