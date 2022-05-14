@@ -21,6 +21,8 @@ body {
 
 h2 {
     text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 
@@ -66,7 +68,7 @@ nav a:hover {
 }
 
 aside {
-    width: 25%;
+    width: 25%; 
     padding-left: 15px;
     margin: 0;
     margin-top: 0px;
@@ -87,7 +89,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     background-color: var(--secondary_color); 
-    width: 75%;
+    width: 75%; 
     padding: 40px;
     justify-content: center;
     min-height: 98vh;
@@ -156,7 +158,7 @@ section p {
 
 p {
     text-align: justify;
-    margin: 10px 15px 10px 15px;
+    margin: 5px 15px 10px 15px;
 }
 
 
@@ -238,3 +240,65 @@ p {
 /* end of porject images */
 
 /* start resposive design */
+
+@media screen and (max-width: 980px) {
+    header {
+      padding: 0 0 10px 0;
+      justify-content: center;
+      text-align: center;
+    }
+
+    header h1 {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+        font-size: 10vw;
+      }
+
+    aside{
+        width: 100%;
+    }
+
+    
+  
+    
+  
+     /*header nav {
+      justify-content: center;
+    }
+  
+    .page-section > h2,
+    .page-section > div {
+      flex: 0 0 100%;
+    }
+  
+    .page-section > h2 {
+      border-right: none;
+      border-bottom: 4px solid var(--primary);
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      text-align: left;
+      font-size: 7vw;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .flex-item,
+    .flex-item:first-child {
+      flex-basis: 100%;
+    }
+  
+    .flex-item:first-child {
+      min-height: 150px;
+    }
+  
+    .hero-banner {
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .contact address {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }*/
