@@ -19,66 +19,51 @@
 
 ### The challenge
 
-This is a simple calendar application that allows a user to save events for each hour of the day. This app runs in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+This project aims to showcase my skills to potential employers. In it, I apply core CSS skills including flexbox, media queries, and CSS variables. 
 
 ### User Story
 
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
+AS AN employer
+I WANT to view a potential employee's deployed portfolio of work samples
+SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
 
 ### Acceptance Criteria
 
-GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with timeblocks for standard business hours
-WHEN I view the timeblocks for that day
-THEN each timeblock is color coded to indicate whether it is in the past, present, or future
-WHEN I click into a timeblock
-THEN I can enter an event
-WHEN I click the save button for that timeblock
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
+GIVEN I need to sample a potential employee's previous work
+WHEN I load their portfolio
+THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
+WHEN I click one of the links in the navigation
+THEN the UI scrolls to the corresponding section
+WHEN I click on the link to the section about their work
+THEN the UI scrolls to a section with titled images of the developer's applications
+WHEN I am presented with the developer's first application
+THEN that application's image should be larger in size than the others
+WHEN I click on the images of the applications
+THEN I am taken to that deployed application
+WHEN I resize the page or view the site on various screens and devices
+THEN I am presented with a responsive layout that adapts to my viewport
 
 ### Screenshot
 
-![](./Assets/screenshot.png)
+![](./assets/images/screenshot.png)
 
 ### Links
 
-- Solution URL: [Work Day Scheduler](https://github.com/Monkonjay/Work-Day-Scheduler.git)
-- Live Site: [Test the Project](https://monkonjay.github.io/Work-Day-Scheduler/)
+- Solution URL: [Work Day Scheduler](https://github.com/Monkonjay/Portfolio.git)
+- Live Site: [Test the Project](https://monkonjay.github.io/Portfolio/)
 
 ## My process
 
 ### Built with
 
-- Javascript
 - CSS
 - HTML5
-- jQuery
-- Bootstrap 5
-- Moments
 
 
 ### What I learned
 
-I learned how to format time using moments.js.  It was exciting working with Bootstrap classes and customizing them for my particular application. The most challenging codes had to deal with storing and retrieving the textarea content to and from local storage with jQuery loops
+The primary experience in this project was working with CSS and flexbox. It was good experience positioning elements on the page. I found it an efficient approach using CSS variables.
 
-
-```moments.js
-current_day.text(moment().format("ddd MMM Do"));
-```
-
-```javaScript/jQuery
-for (let i = 0; i < localStorage.length; i++) {
-    $('#'+localStorage.key(i)).text(localStorage.getItem(localStorage.key(i)))
-  }
-
-```
 
 ## Author
 
