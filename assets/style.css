@@ -161,7 +161,7 @@ p {
     margin: 5px 15px 10px 15px;
 }
 
-
+/* banner properties and background image */
 .banner {
     background-image: url("./images/coding_bg.jpg");
     background-size: cover;
@@ -173,7 +173,8 @@ p {
     align-items: flex-start;
     text-align: left;
 }
- 
+
+/* properties for footer/contact */
 #contact {
     margin: 0px 40px 0px 40px;
     background-color: var(--primary_color);
@@ -206,7 +207,7 @@ p {
     color: var(--span_banner_hover);
   }
 
-/* needs work */
+
 #contact_content {
     color: var(--sidebar_color);
     padding: 5px;
@@ -245,8 +246,8 @@ p {
 }
 /* end of porject images */
 
-/* start resposive design */
 
+/* start resposive design */
 @media screen and (max-width: 980px) {
     header {
       padding: 0 0 10px 0;
@@ -259,7 +260,7 @@ p {
         padding: 5px;
         margin-bottom: 10px;
         font-size: 10vw;
-      }
+    }
 
     aside{
         width: 100%;
@@ -269,19 +270,18 @@ p {
       justify-content: center;
     }
  
-    h2,
-    div {
+    h2, div {
       flex: 0 0 100%;
     }
 
-    /* review this code */
+   
     #contact_contact a {
         flex-direction: column;
     }
-  
+
    
   
-  @media screen and (max-width: 768px) {
+    @media screen and (max-width: 768px) {
     .project,
     .project:first-child {
       flex-basis: 100%;
@@ -296,8 +296,9 @@ p {
       text-align: center;
     }
   
-    /* review this code */
+   
     #contact_contact a {
         flex-direction: column;
     }
-  
+   }
+}
