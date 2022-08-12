@@ -69,5 +69,5 @@ The primary experience in this project was working with CSS and flexbox. It was 
 
 ## Author
 
-- Website - [Robert M Greene]( https://monkonjay.github.io/Portforlio-Page/)
+- Website - [Robert M Greene]( https://monkonjay.github.io/Portfolio/)
 - Github - [Monkonjay](https://github.com/Monkonjay)
