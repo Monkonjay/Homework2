@@ -51,7 +51,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 ### Links
 
-- Solution URL: [Work Day Scheduler](https://github.com/Monkonjay/Portfolio.git)
+- Solution URL: [Portfolio](https://github.com/Monkonjay/Portfolio.git)
 - Live Site: [Test the Project](https://monkonjay.github.io/Portfolio/)
 
 ## My process
